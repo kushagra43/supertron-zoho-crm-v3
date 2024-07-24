@@ -75,29 +75,78 @@
       </div>
       <div class="form-container ml40">
         <div class="header-glass-morph">
-          <form class="header-form" id="myForm"
+          <form
+            class="header-form"
+            id="myForm"
             action="https://forms.hubspot.com/uploads/form/v2/23736002/688d8b8a-37c8-4bf1-bd94-9e2e31d4c0d8"
-            method="post">
-            <p class="whiteparah normal mb20 red-blue" style="text-align: center; font-weight: 600">
-              Consult Supertron to migrate to Zoho CRM.
-            </p>
-            <input name="first_name" type="text" class="header-input mb20" placeholder="Full Name" id="fullName" />
-            <!-- <input
-                name="last_name"
+            style="display: flex; flex-direction: column;"
+            method="post"
+          >
+            <div
+              style="display: flex; flex-direction: column"
+              class="input-div"
+            >
+              <label class="label_input">Full Name</label>
+              <input
+                name="full_name"
                 type="text"
                 class="header-input mb20"
-                placeholder="Last Name"
-              /> -->
-            <input name="email" type="email" class="header-input mb20" placeholder="Work Email" required />
-            <p id="emailError" class="whiteparah small mb20"></p>
-            <input name="company" type="text" class="header-input mb20" placeholder="Company Name" required />
-            <input name="mobilephone" type="tel" class="header-input mb20" placeholder="Phone Number" required />
+                placeholder="e.g. John Dev"
+              />
+            </div>
+            <div
+              style="display: flex; flex-direction: column"
+              class="input-div"
+            >
+              <label class="label_input">Email </label>
+              <input
+                name="email"
+                type="email"
+                class="header-input mb20"
+                placeholder="e.g. Johndev@mail.com"
+                required
+              />
+            </div>
+
+            <div
+              style="display: flex; flex-direction: column"
+              class="input-div"
+            >
+              <label class="label_input">Company </label>
+              <input
+                name="company"
+                type="text"
+                class="header-input mb20"
+                placeholder="company name"
+                required
+              />
+            </div>
+            <div
+              style="display: flex; flex-direction: column"
+              class="input-div"
+            >
+              <label class="label_input">Phone Number</label>
+              <input
+                name="mobilephone"
+                type="tel"
+                class="header-input mb20"
+                placeholder="+9112323133"
+                required
+              />
+            </div>
+            <div
+              style="display: flex; flex-direction: column"
+              class="input-div"
+            >
+              <label class="label_input">Additional Comments</label>
+              <textarea name="" class="header-input" placeholder="What are you looking for?" id="" style="height: 60px;"></textarea>
+            </div>
+
             <p id="mobileError" class="whiteparah small mb20">
               Please enter a valid 10 digit mobile number
             </p>
-
             <div class="flex justifyend">
-              <input type="submit" class="redbutton" placeholder="Talk to us" />
+              <input type="submit" class="bluebutton" placeholder="Submit" />
             </div>
           </form>
           <p id="thankYou" class="whiteparah normal center">
